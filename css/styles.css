@@ -1,0 +1,331 @@
+:root {
+    --pale-pink: #fae1f9;
+    --light-gray: #b8b2b7;
+    --dark-gray: #7d777c;
+    --medium-gray: #808080;
+    --pink: #ffc0cb;
+    --lavender: #d1c6e8;
+    --silver: #a9a9a9;
+    --black: #000000;
+    --white: #ffffff;
+    --hot-pink: #ff69b4;
+    --dusty-rose: #c9a9a6;
+    --coral-pink: #f88379;
+    --magenta-pink: #ff00ff;
+    --pastel-pink: #f8c8dc;
+  }
+  
+  
+  /*
+  var(--hot-pink)
+  var(--dusty-rose)
+  var(--coral-pink)
+  var(--magenta-pink)
+  var(--pastel-pink)
+  var(--pale-pink)
+  var(--light-gray)
+  var(--dark-gray)
+  var(--medium-gray)
+  var(--pink)
+  var(--lavender)
+  var(--silver)
+  var(--black)
+  var(--white)
+  
+  */
+  
+  header, footer{
+    display:grid;
+    padding:4rem;
+    margin:1rem;
+    position: relative;
+    height: 100px; /* Adjust as needed */
+  }
+  
+  .circle {
+    position: relative;
+    padding:.5rem;
+    margin: .2rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--dark-gray);
+    border: 2px solid var(--dark-gray);
+  }
+  
+  
+  body {
+    background-color: var(--pale-pink);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  #c1,
+  #c2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+  }
+  
+  #c1 {
+    z-index: -11;
+  }
+  #c2 {
+    z-index: 1000;
+  }
+  .main{
+      padding:3rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .snowglobe {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: var(--dark-gray);
+    border: 2px solid var(--dark-gray);
+    z-index: -30;
+  }
+  
+  .snowglobe:before {
+    position: absolute;
+    content: "";
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    background: var(--light-gray);
+  }
+  
+  .snowglobe:after {
+    position: absolute;
+    content: "";
+    height: 280px;
+    width: 290px;
+    border-radius: 50%;
+    top: 17px;
+    background: var(--dark-gray);
+  }
+  
+  
+  /*
+  var(--hot-pink)
+  var(--dusty-rose)
+  var(--coral-pink)
+  */
+  .base {
+    position: relative;
+    border-bottom: 50px solid var(--hot-pink);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 242px;
+    margin-top: -60px;
+    z-index: -10;
+    align-self: center;
+  }
+  
+  
+  
+  .base:after {
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: -10px;
+    width: 262px;
+    height: 50px;
+    border-radius: 125px / 25px;
+    background: var(--hot-pink);
+  }
+  
+  .baseTop {
+    background-color: #fff;
+    width: 242px;
+    height: 40px;
+    border-radius: 125px / 20px;
+    margin-top: -72px;
+    box-sizing: border-box;
+    border-bottom: 8px solid var(--dusty-rose);
+    z-index: -10;
+    align-self: center;
+  }
+  
+  .baseShadow {
+    position: absolute;
+    background-color: #a1a6b1;
+    width: 275px;
+    height: 60px;
+    border-radius: 130px / 30px;
+    top: 270px;
+    z-index: -40;
+    align-self: center;
+  }
+  
+  .tree {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-bottom: 70px solid var(--pink);
+    margin-top: 67px;
+    margin-left: -80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .tree:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 70px solid var(--dusty-rose);
+  }
+  
+  .tree4 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 100px solid var(--pink);
+    margin-top: 65px;
+    margin-left: -50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .tree4:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 30px solid transparent;
+    border-bottom: 100px solid var(--dusty-rose);
+  }
+  
+  .tree2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 70px solid var(--pink);
+    margin-top: 67px;
+    margin-left: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /*
+  var(--hot-pink)
+  var(--hot-pink)
+  var(--dusty-rose)
+  var(--coral-pink)
+  */
+  .tree2:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 70px solid var(--dusty-rose);
+  }
+  
+  .tree3 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-bottom: 80px solid var(--pink);
+    margin-top: 69px;
+    margin-left: -20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .tree3:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 80px solid var(--dusty-rose);
+  }
+  
+  .roof {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 31.25px solid var(--dark-gray);
+    margin-top: 58px;
+    margin-left: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cabin {
+    position: absolute;
+    background: var(--lavender);
+    display: inline-block;
+    height: 40px;
+    margin-top: 93px;
+    margin-left: 30px;
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cabin:before {
+    border-bottom: 25px solid var(--lavender);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -25px;
+    width: 0;
+  }
+  .message {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: var(--hot-pink);
+    text-align: center;
+    font-weight:bold;
+    z-index: 2;
+  }
+  
+  #holidaymessage{
+    width:300px;
+    background-color:var(--pink);
+    padding:1rem;
+    border: 3px dotted var(--hot-pink);
+    margin-top:-4rem;
+  }
+  
+  
